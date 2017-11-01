@@ -1,3 +1,3 @@
 import matplotlib.pyplot as plt
 import numpy
-import sklearn
+from sklearn import svm
