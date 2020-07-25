@@ -1,0 +1,66 @@
+
+Django
+
+1. Object-relational mapping
+2. URL routing
+3. HTML templating
+4. Form Handling
+
+not a web server. works with apache etc
+
+__init__.py - teslls python that folder contains Python code
+wisdom/wsgi.py - hooks for web server when server is running
+wisdom/asgi.py
+
+settings.py - Configures Django Project
+
+wisdom/urls.py - Routes web request based on URL
+
+apps - da
+model - data
+admin- administrative interfaces related to data of the file
+urls - urls of the Project
+views - views of the Project, returns https
+tests - test case
+migrations - migrate database
+
+MVC:
+URL patterns - when receiving http request
+views - logic or control flow for project
+    takes http req as argument and returns http response for the web server
+Models - perform querries againsta db
+    Django model is a class with attributes that deefine schema or underlying structure
+    models are like spreadsheet
+Template - Presentation layer, http response
+----
+django-admin starterproject wisdompets
+
+python manage.py runserver
+python manage.py startapp adoptions
+
+sqllite - db
+
+settings.py - add 'adoption'
+---
+MODEL: Define structure of database table
+max_length - max length of charac
+null - field can be empty
+blank - fields not required
+
+MIGRATION: Generate scripts to change the db structure.
+Migration is needed when
+1. adding a model
+2. Adding a field
+3. removing a field
+4. Changing a field
+
+Initial Migration:
+First migration created for a new Django app will
+create tables for the models that are defined.
+
+makemigrations - gener
+showmigrations
+migrate
+
+Unapplied migration:
+When a migration is not started
