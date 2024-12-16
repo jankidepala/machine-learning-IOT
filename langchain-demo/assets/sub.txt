@@ -1,0 +1,17 @@
+One of the most
+common issues you still counter when you try to train large language models
+is running out of memory. If you've ever tried
+training or even just loading your
+model on Nvidia GPUs, this error message
+might look familiar. CUDA, short for Compute
+Unified Device Architecture, is a collection of libraries and tools developed for Nvidia GPUs. Libraries such as PyTorch and TensorFlow use CUDA to boost performance on metrics
+multiplication and other operations
+common to deep learning. You'll encounter these
+out-of-memory issues because most LLMs are huge, and require a ton of memory to store and train all
+of their parameters. Let's do some quick
+math to develop intuition about the
+scale of the problem. A single parameter is typically represented by a 32-bit float, which is a way computers
+represent real numbers. You'll see more
+details about how numbers gets stored in
+this format shortly. A 32-bit float takes up
+four bytes of memory. 
